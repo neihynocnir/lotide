@@ -15,4 +15,4 @@ const assertArraysEqual = function (actual, expected) {
 }
 
 
-console.log((assertArraysEqual([1, 2, 3], [1, 3, 3])) ? `Assertion Passed`:`Assertion Failed`);
+console.log((assertArraysEqual([1, 2, 3], [1, 2, 3])) ? `Assertion Passed`:`Assertion Failed`);
