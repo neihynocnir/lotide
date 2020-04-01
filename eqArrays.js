@@ -7,20 +7,20 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// Get the value type
-const eqArrays = function (actual, expected) {
+const eqArrays = function(arrayA, arrayB) {
   // Compare the length of the two arrays
-  if (actual.length === expected.length) {
-    for (i=0; i < actual.length; i++) {
-      // Compare type and value for the two items 
-      if (typeof(actual[i]) !== typeof(expected[i]) || actual[i] !== expected[i]){
-        return false
+  if (arrayA.length === arrayB.length) {
+    for (let itemIndex in arrayA) {
+      let valueActual = arrayA[itemIndex];
+      let valueExp = arrayB[(arrayB.indexOf(arrayA[itemIndex]))];
+      if (typeof(valueActual) !== typeof(valueExp) || valueActual !== valueExp) {
+        return false;
       }
     }
     return true;
   } else {
     return false;
   }
-}
+};
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
