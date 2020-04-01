@@ -1,5 +1,5 @@
 // Get the value type
-const eqArrays = function (actual, expected) {
+const assertArraysEqual = function (actual, expected) {
   // Compare the length of the two arrays
   if (actual.length === expected.length) {
     for (i=0; i < actual.length; i++) {
@@ -15,4 +15,4 @@ const eqArrays = function (actual, expected) {
 }
 
 
-console.log((eqArrays([1, 2, 3], [1, 3, 3])) ? `Assertion Passed`:`Assertion Failed`);
+console.log((assertArraysEqual([1, 2, 3], [1, 3, 3])) ? `Assertion Passed`:`Assertion Failed`);
