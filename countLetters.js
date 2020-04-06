@@ -1,15 +1,5 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-// allItems: an array of strings that we need to look through
-// itemsToCount: an object specifying what to count
 const countLetters = function(phrase) {
-  let splitPhrase = phrase.split(" ").join("");
+  let splitPhrase = phrase.split(" ").join("").toLowerCase();
   const results = {};
   for (const letter of splitPhrase) {
     if (results[letter]) {
@@ -21,6 +11,4 @@ const countLetters = function(phrase) {
   return results;
 };
 
-
-console.log(countLetters('lighthouse in the house'));
-
+module.exports = countLetters;
