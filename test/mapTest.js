@@ -25,10 +25,3 @@ describe("#map", () => {
   });
 
 });
-
-
-
-// const words = ['paper', 'scissors', 'rocks', 'water', 'fire'];
-
-// const testMap = map(words, word => word[0]);
-// console.log(assertArraysEqual(testMap,[ 'p', 's', 'r', 'w', 'f' ]));
