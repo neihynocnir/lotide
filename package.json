@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@neihyr/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "library of FOCUS functions",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -19,7 +19,7 @@
     "url": "git+https://github.com/neihynocnir/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "neihyr",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/neihynocnir/lotide/issues"
